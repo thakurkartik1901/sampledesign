@@ -1,8 +1,4 @@
-import 'dart:io';
-import 'dart:async';
-
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 
 class Profile extends StatefulWidget {
   static const routeName = '/update-profile';
@@ -10,16 +6,7 @@ class Profile extends StatefulWidget {
 }
 
 class _ProfileState extends State<Profile> {
-  final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
-
   final _scaffoldKey = GlobalKey<ScaffoldState>();
-  bool _loading = false;
-  bool _isInit = false;
-  bool _loadingPic = false;
-  DateTime _selectedDate;
-
-  DateTime initialData;
-  // var _isInit = true;
 
   @override
   void initState() {
